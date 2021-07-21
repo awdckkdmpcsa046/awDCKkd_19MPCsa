@@ -1,0 +1,48 @@
+import java.util.*;
+class map1
+{
+  public static void main (String args[])
+  {
+    Scanner sc = new Scanner (System.in);
+      HashMap < String, Integer > x = new HashMap < String, Integer > ();
+      System.out.println ("Enter k Value");
+    int k = sc.nextInt ();
+      String[] arr = new String[k];
+      key = sc.nextLine ();
+    for (int i = 0; i < k; i++)
+      {
+	arr[i] = sc.next ();
+      }
+    for (int i = 0; i < arr.length; i++)
+      {
+	String key;
+	key = arr[i];
+	if (x.containsKey (key))
+	  x.put (key, x.get (key) + 1);
+	else
+	  x.put (key, 1);
+      for (String arr[i]:x.keySet ())
+	  {
+	    if (i.get (i) > 2)
+	      System.out.println (i + "=" + x.get (i) + " ");
+	    System.out.println (x);
+	  }
+      }
+  }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac map1.java
+C:\Users\hp>java map1
+Enter k Value: 9
+Rama
+Gita
+Rama
+Lakshmi
+Rama
+Gita
+Lakshmi
+Sita
+Lakshmi
+Rama=3
+Lakshmi=3
